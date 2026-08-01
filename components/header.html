@@ -1,0 +1,116 @@
+<!-- ===== ШАПКА ===== -->
+<header class="header" id="header">
+    <div class="container">
+        <div class="header-content">
+            <a href="/" class="logo">
+                <img src="/images/logo.png" alt="Логотип автосервиса" />
+                <div class="logo-text">
+                    <span><span style="color:var(--accent);">РЕМ</span>ЗОНА</span>
+                    <p class="logo-desc"><br />АВТОСЕРВИС | РЕМОНТ</p>
+                </div>
+            </a>
+
+            <button class="hamburger" id="hamburger" aria-label="Меню">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link">Главная</a></li>
+                    <li><a href="#services" class="nav-link">Услуги</a></li>
+                    <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+                    <li><a href="#promo" class="nav-link">Акции</a></li>
+                    <li><a href="#contacts" class="nav-link">Контакты</a></li>
+                </ul>
+                
+                <!-- ===== МОБИЛЬНЫЕ КОНТАКТЫ ===== -->
+                <div class="mobile-contacts" id="mobile-contacts">
+                    <!-- Выбор города -->
+                    <div class="mobile-city-selector">
+                        <button class="mobile-city-btn" id="mobile-city-btn">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span id="mobile-city-name">Санкт-Петербург</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="mobile-city-dropdown" id="mobile-city-dropdown">
+                            <button class="mobile-city-option" data-city="spb" onclick="selectMobileCity('spb')">
+                                <i class="fa-solid fa-city"></i>
+                                <span>Санкт-Петербург</span>
+                                <i class="fa-solid fa-check mobile-check" id="mobile-check-spb"></i>
+                            </button>
+                            <button class="mobile-city-option" data-city="moscow" onclick="selectMobileCity('moscow')">
+                                <i class="fa-solid fa-city"></i>
+                                <span>Москва</span>
+                                <i class="fa-solid fa-check mobile-check" id="mobile-check-moscow"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Филиалы с телефонами и адресами -->
+                    <div class="mobile-phones-addresses" id="mobile-phones-addresses"></div>
+                    
+                    <a href="https://t.me/+79779798484" class="mobile-telegram">
+                        <i class="fa-brands fa-telegram"></i> Написать в Telegram
+                    </a>
+                    
+                    <button class="mobile-callback-btn" onclick="openCallback()">
+                        <i class="fa-solid fa-calendar-plus"></i> Записаться
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Контакты в шапке (ДЕСКТОП) -->
+            <div class="header-contacts">
+                <div class="header-phone-wrap">
+                    <a href="tel:+79819600040" class="phone-link" id="header-phone">+7 (981) 960-0040</a>
+                    <span class="city-label" id="header-city">Санкт-Петербург</span>
+                </div>
+                <button class="city-select-btn" id="city-select-btn" onclick="openCityModal()" title="Выбрать город">
+                    <i class="fa-solid fa-location-dot"></i>
+                </button>
+                <a href="https://t.me/+79779798484" class="telegram-link" aria-label="Telegram">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <button class="btn-primary-small" onclick="openCallback()">Записаться</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- ===== МИНИ-МОДАЛКА ВЫБОРА ГОРОДА ===== -->
+<div class="city-modal-overlay" id="city-modal" onclick="closeCityModalOutside(event)">
+    <div class="city-modal" onclick="event.stopPropagation();">
+        <div class="city-modal-header">
+            <h3><i class="fa-solid fa-location-dot" style="color:var(--accent);"></i> Ваш город</h3>
+            <button class="city-modal-close" onclick="closeCityModal()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="city-modal-body">
+            <p class="city-modal-subtitle">Выберите ваш город для отображения актуальных контактов</p>
+            <div class="city-options">
+                <button class="city-option" data-city="spb" onclick="selectCity('spb')">
+                    <i class="fa-solid fa-city"></i>
+                    <div class="city-option-info">
+                        <span class="city-name">Санкт-Петербург</span>
+                        <span class="city-phone">+7 (981) 960-0040</span>
+                    </div>
+                    <i class="fa-solid fa-check-circle city-check"></i>
+                </button>
+                <button class="city-option" data-city="moscow" onclick="selectCity('moscow')">
+                    <i class="fa-solid fa-city"></i>
+                    <div class="city-option-info">
+                        <span class="city-name">Москва</span>
+                        <span class="city-phone">+7 (499) 840-84-84</span>
+                    </div>
+                    <i class="fa-solid fa-check-circle city-check"></i>
+                </button>
+            </div>
+        </div>
+        <div class="city-modal-footer">
+            <button class="city-modal-confirm" onclick="confirmCity()">Подтвердить</button>
+        </div>
+    </div>
+</div>

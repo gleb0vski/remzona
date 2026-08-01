@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>РЕМЗОНА | Ремонт и обслуживание автомобилей</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Ремзона - автосервис с филиалами в Москве и Санкт-Петербурге. Ремонт BMW, Mercedes-Benz, VAG. Заправка кондиционеров, ТО, замена масла АКПП, ДВС и трансмиссии. Скидка 20% на первый визит!" />
+    <meta name="keywords" content="автосервис, ремонт BMW, ремонт Mercedes, ремонт VAG, заправка кондиционеров, ТО, замена масла АКПП, автосервис Москва, автосервис СПб" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="РЕМЗОНА — Ремонт и обслуживание автомобилей" />
+    <meta property="og:description" content="Опытные мастера. Только оригинальные расходники. Скидка 20% на первый визит + бесплатная диагностика!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://your-site.ru" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/png" />
+
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ===== МЕСТО ДЛЯ ШАПКИ ===== -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- ===== HERO ===== -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="promo-badge">
+                        <span class="promo-flash"><i class="fa-solid fa-fire"></i></span>
+                        <span>Первый визит — скидка 20% + диагностика бесплатно!</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Ремонт и обслуживание <br />
+                        <span class="accent-text">вашего автомобиля</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Опытные мастера со стажем от 10 лет. Только оригинальные расходники.
+                        <strong>100% контроль подделок.</strong> Работаем с BMW, Mercedes-Benz, VAG и всеми марками.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-large" onclick="openCallback()">
+                            Записаться на диагностику
+                        </button>
+                        <a href="#services" class="btn btn-outline btn-large">Наши услуги</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Лет опыта</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3000+</div>
+                            <div class="stat-label">Довольных клиентов</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">4.8 ★</div>
+                            <div class="stat-label">Рейтинг на Яндекс</div>
+                        </div>
+                    </div>
+                    <img src="images/bg-mobile.jpg" class="bg-mobile" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== УСЛУГИ ===== -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Наши <span class="accent-text">услуги</span></h2>
+                    <p class="section-subtitle">Полный спектр работ по обслуживанию и ремонту автомобилей</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-regular fa-snowflake"></i></div>
+                        <h3>Заправка и обслуживание кондиционеров</h3>
+                        <p>Диагностика, заправка, дезинфекция и ремонт автокондиционеров</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-wrench"></i></div>
+                        <h3>ТО для всех марок</h3>
+                        <p>Техническое обслуживание автомобилей любых марок и моделей</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
+                        <h3>Замена масла АКПП</h3>
+                        <p>Профессиональная замена масла в автоматических коробках передач</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-oil-can"></i></div>
+                        <h3>Замена масла ДВС и трансмиссии</h3>
+                        <p>Замена моторного масла и масла в трансмиссии с промывкой</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-fan"></i></div>
+                        <h3>Мойка радиаторов со снятием</h3>
+                        <p>Профессиональная очистка радиаторов со снятием для максимальной эффективности</p>
+                    </div>
+                    <div class="service-card service-card-highlight">
+                        <div class="service-icon"><i class="fa-regular fa-circle-check"></i></div>
+                        <h3>Бесплатная диагностика</h3>
+                        <p>При первом визите — диагностика ходовой, двигателя и электроники <strong>бесплатно!</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== РЕМОНТ ПО МАРКАМ ===== -->
+        <section id="brands" class="brands-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Ремонт <span class="accent-text">по маркам</span></h2>
+                    <p class="section-subtitle">Специализируемся на ремонте европейских автомобилей премиум-класса</p>
+                </div>
+                <div class="brands-grid">
+                    <div class="brand-card">
+                        <img src="images/bmw-logo.png" alt="BMW" />
+                        <div class="brand-card-content">
+                            <h3>BMW</h3>
+                            <p>Ремонт двигателей, ходовой, электроники и АКПП BMW</p>
+                        </div>
+                    </div>
+                    <div class="brand-card">
+                        <img src="images/mercedes-logo.png" alt="Mercedes-Benz" onerror="this.style.display='none'" />
+                        <div class="brand-card-content">
+                            <h3>Mercedes-Benz</h3>
+                            <p>Профессиональный ремонт Mercedes-Benz любой сложности</p>
+                        </div>
+                    </div>
+                    <div class="brand-card">
+                        <img src="images/vag-logo.png" alt="VAG" onerror="this.style.display='none'" />
+                        <div class="brand-card-content">
+                            <h3>VAG (Audi/VW)</h3>
+                            <p>Ремонт и обслуживание автомобилей концерна VAG</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== МЕСТО ДЛЯ ФУТЕРА (СЕКЦИИ + ФУТЕР + МОДАЛКИ) ===== -->
+    <div id="footer-placeholder"></div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/loader.js"></script>
+
+    <!-- ===== БИБЛИОТЕКА ДЛЯ МАСКИ ТЕЛЕФОНА ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+    <script>
+        // ===== МАСКА ДЛЯ ТЕЛЕФОНА =====
+        $(document).ready(function() {
+            $('input[type="tel"]').mask('+7 (999) 999-99-99');
+        });
+    </script>
+</body>
+</html>
