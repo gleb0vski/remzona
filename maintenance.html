@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Техническое обслуживание | РЕМЗОНА</title>
+
+    <meta name="description" content="Профессиональное техническое обслуживание автомобилей в Москве и Санкт-Петербурге. Замена масла, фильтров, тормозных колодок. Диагностика. Гарантия." />
+    <meta name="keywords" content="ТО автомобиля, техническое обслуживание, замена масла, замена фильтров, диагностика авто" />
+
+    <meta property="og:title" content="Техническое обслуживание | РЕМЗОНА" />
+    <meta property="og:description" content="Профессиональное ТО автомобилей. Замена масла, фильтров, тормозных колодок. Диагностика." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gleb0vski.github.io/remzona/maintenance.html" />
+
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ===== МЕСТО ДЛЯ ШАПКИ ===== -->
+    <div id="header-placeholder"></div>
+
+    <main>
+
+        <!-- ===== ВНУТРЕННИЙ ХИРО ===== -->
+        <section class="service-hero">
+            <div class="container">
+                <div class="service-hero-content">
+                    <div class="service-hero-text">
+                        <div class="breadcrumbs">
+                            <a href="index.html">Главная</a>
+                            <span>/</span>
+                            <a href="index.html#services">Услуги</a>
+                            <span>/</span>
+                            <span>Техническое обслуживание</span>
+                        </div>
+                        <h1>Техническое обслуживание</h1>
+                        <p class="service-hero-subtitle">Профессиональное ТО для всех марок автомобилей. Используем только оригинальные расходные материалы и жидкости.</p>
+                        <div class="service-hero-buttons">
+                            <button class="btn btn-primary btn-large" onclick="openCallback()">
+                                Записаться на ТО
+                            </button>
+                            <a href="#service-list" class="btn btn-outline btn-large">Что входит в ТО</a>
+                        </div>
+                        <div class="service-hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">1000+</div>
+                                <div class="stat-label">Проведенных ТО</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Оригинальные расходники</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">12 мес</div>
+                                <div class="stat-label">Гарантия на работы</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-hero-image">
+                        <img src="images/maintenance.jpg" alt="Техническое обслуживание" onerror="this.parentElement.innerHTML='<div class=\'service-hero-placeholder\'><i class=\'fa-solid fa-wrench\'></i><p>ТО</p></div>'" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== СПИСОК УСЛУГ (КАРТОЧКИ) ===== -->
+        <section id="service-list" class="service-list-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Что входит в <span class="accent-text">ТО</span></h2>
+                    <p class="section-subtitle">Плановое и дополнительное обслуживание автомобилей</p>
+                </div>
+
+                <div class="service-list-grid">
+                    <!-- Карточка 1: Замена масла -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-oil-can"></i></div>
+                        <h3>Замена масла в двигателе</h3>
+                        <ul>
+                            <li>Слив отработанного масла</li>
+                            <li>Замена масляного фильтра</li>
+                            <li>Заливка нового масла</li>
+                            <li>Промывка двигателя (опционально)</li>
+                            <li>Проверка уровня</li>
+                            <li>Рекомендации по выбору масла</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 2: Замена фильтров -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-filter"></i></div>
+                        <h3>Замена всех фильтров</h3>
+                        <ul>
+                            <li>Масляный фильтр</li>
+                            <li>Воздушный фильтр</li>
+                            <li>Салонный фильтр</li>
+                            <li>Топливный фильтр</li>
+                            <li>Проверка состояния</li>
+                            <li>Оригинальные фильтры</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 3: Тормозная система -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-circle-stop"></i></div>
+                        <h3>Обслуживание тормозов</h3>
+                        <ul>
+                            <li>Замена тормозных колодок</li>
+                            <li>Замена тормозных дисков</li>
+                            <li>Замена тормозной жидкости</li>
+                            <li>Проверка суппортов</li>
+                            <li>Диагностика тормозов</li>
+                            <li>Прокачка тормозной системы</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 4: Замена жидкостей -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-droplet"></i></div>
+                        <h3>Замена всех жидкостей</h3>
+                        <ul>
+                            <li>Тормозная жидкость</li>
+                            <li>Охлаждающая жидкость</li>
+                            <li>Жидкость ГУР</li>
+                            <li>Трансмиссионное масло</li>
+                            <li>Проверка уровня</li>
+                            <li>Оригинальные жидкости</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 5: Диагностика -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-stethoscope"></i></div>
+                        <h3>Компьютерная диагностика</h3>
+                        <ul>
+                            <li>Считывание ошибок</li>
+                            <li>Проверка всех систем</li>
+                            <li>Анализ работы двигателя</li>
+                            <li>Проверка электроники</li>
+                            <li>Расшифровка кодов</li>
+                            <li>Рекомендации по ремонту</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 6: Полное ТО -->
+                    <div class="service-list-card service-card-highlight">
+                        <div class="service-list-icon"><i class="fa-solid fa-star"></i></div>
+                        <h3>Полное ТО (комплекс)</h3>
+                        <ul>
+                            <li>Замена масла и всех фильтров</li>
+                            <li>Замена всех жидкостей</li>
+                            <li>Проверка тормозной системы</li>
+                            <li>Полная диагностика</li>
+                            <li>Адаптация и сброс ошибок</li>
+                            <li><strong>Скидка 20% на комплекс</strong></li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== МЕСТО ДЛЯ ФУТЕРА ===== -->
+    <div id="footer-placeholder"></div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/loader.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('input[type="tel"]').mask('+7 (999) 999-99-99');
+        });
+    </script>
+</body>
+</html>

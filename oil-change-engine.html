@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Замена масла ДВС и трансмиссии | РЕМЗОНА</title>
+
+    <meta name="description" content="Профессиональная замена масла в двигателе и трансмиссии в Москве и Санкт-Петербурге. Замена масла ДВС, МКПП, вариатор, раздатка. Оригинальные масла. Гарантия." />
+    <meta name="keywords" content="замена масла ДВС, замена масла в двигателе, замена масла в трансмиссии, замена масла МКПП" />
+
+    <meta property="og:title" content="Замена масла ДВС и трансмиссии | РЕМЗОНА" />
+    <meta property="og:description" content="Профессиональная замена масла в двигателе и трансмиссии. Все виды масел." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gleb0vski.github.io/remzona/oil-change-engine.html" />
+
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ===== МЕСТО ДЛЯ ШАПКИ ===== -->
+    <div id="header-placeholder"></div>
+
+    <main>
+
+        <!-- ===== ВНУТРЕННИЙ ХИРО ===== -->
+        <section class="service-hero">
+            <div class="container">
+                <div class="service-hero-content">
+                    <div class="service-hero-text">
+                        <div class="breadcrumbs">
+                            <a href="index.html">Главная</a>
+                            <span>/</span>
+                            <a href="index.html#services">Услуги</a>
+                            <span>/</span>
+                            <span>Замена масла ДВС и трансмиссии</span>
+                        </div>
+                        <h1>Замена масла ДВС и трансмиссии</h1>
+                        <p class="service-hero-subtitle">Профессиональная замена моторного масла и масла в трансмиссии. Используем только проверенные масла и фильтры. Продлеваем ресурс двигателя и коробки.</p>
+                        <div class="service-hero-buttons">
+                            <button class="btn btn-primary btn-large" onclick="openCallback()">
+                                Записаться на замену
+                            </button>
+                            <a href="#service-list" class="btn btn-outline btn-large">Что мы меняем</a>
+                        </div>
+                        <div class="service-hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">1500+</div>
+                                <div class="stat-label">Замен масла ДВС</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Оригинальные масла</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">12 мес</div>
+                                <div class="stat-label">Гарантия на работу</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-hero-image">
+                        <img src="images/oil-change-engine.jpg" alt="Замена масла ДВС" onerror="this.parentElement.innerHTML='<div class=\'service-hero-placeholder\'><i class=\'fa-solid fa-oil-can\'></i><p>Замена масла</p></div>'" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== СПИСОК УСЛУГ (КАРТОЧКИ) ===== -->
+        <section id="service-list" class="service-list-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Что мы <span class="accent-text">меняем</span></h2>
+                    <p class="section-subtitle">Полный спектр работ по замене масел</p>
+                </div>
+
+                <div class="service-list-grid">
+                    <!-- Карточка 1: Замена масла ДВС -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-car"></i></div>
+                        <h3>Замена масла в двигателе</h3>
+                        <ul>
+                            <li>Слив отработанного масла</li>
+                            <li>Замена масляного фильтра</li>
+                            <li>Заливка нового масла</li>
+                            <li>Промывка двигателя (опционально)</li>
+                            <li>Проверка уровня и герметичности</li>
+                            <li>Любое масло на выбор</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 2: Замена масла МКПП -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-gear"></i></div>
+                        <h3>Замена масла в МКПП</h3>
+                        <ul>
+                            <li>Слив старого масла</li>
+                            <li>Замена масла в коробке</li>
+                            <li>Проверка состояния синхронизаторов</li>
+                            <li>Диагностика МКПП</li>
+                            <li>Оригинальные масла</li>
+                            <li>Контроль уровня</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 3: Замена масла вариатора -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-sync-alt"></i></div>
+                        <h3>Замена масла в вариаторе (CVT)</h3>
+                        <ul>
+                            <li>Слив старого масла вариатора</li>
+                            <li>Замена масляного фильтра CVT</li>
+                            <li>Заливка специального масла</li>
+                            <li>Адаптация вариатора</li>
+                            <li>Проверка состояния вариатора</li>
+                            <li>Оригинальные жидкости CVT</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 4: Замена масла раздатки -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-car"></i></div>
+                        <h3>Замена масла в раздатке</h3>
+                        <ul>
+                            <li>Слив старого масла из раздатки</li>
+                            <li>Заливка свежего масла</li>
+                            <li>Проверка состояния</li>
+                            <li>Диагностика раздаточной коробки</li>
+                            <li>Оригинальные жидкости</li>
+                            <li>Контроль герметичности</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 5: Замена масла моста -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-road"></i></div>
+                        <h3>Замена масла в мостах</h3>
+                        <ul>
+                            <li>Слив старого масла</li>
+                            <li>Замена масла в переднем/заднем мосту</li>
+                            <li>Проверка состояния редукторов</li>
+                            <li>Диагностика мостов</li>
+                            <li>Специализированные масла</li>
+                            <li>Контроль герметичности</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 6: Комплекс -->
+                    <div class="service-list-card service-card-highlight">
+                        <div class="service-list-icon"><i class="fa-solid fa-star"></i></div>
+                        <h3>Комплексная замена масел</h3>
+                        <ul>
+                            <li>Замена масла в двигателе</li>
+                            <li>Замена масла в трансмиссии</li>
+                            <li>Замена всех фильтров</li>
+                            <li>Полная диагностика</li>
+                            <li>Промывка систем</li>
+                            <li><strong>Скидка 20% на комплекс</strong></li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== МЕСТО ДЛЯ ФУТЕРА ===== -->
+    <div id="footer-placeholder"></div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/loader.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('input[type="tel"]').mask('+7 (999) 999-99-99');
+        });
+    </script>
+</body>
+</html>

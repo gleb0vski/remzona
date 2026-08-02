@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Замена масла АКПП | РЕМЗОНА</title>
+
+    <meta name="description" content="Профессиональная замена масла в АКПП в Москве и Санкт-Петербурге. Полная и частичная замена, промывка, адаптация. Оригинальные жидкости. Гарантия." />
+    <meta name="keywords" content="замена масла АКПП, замена жидкости АКПП, обслуживание АКПП, промывка АКПП" />
+
+    <meta property="og:title" content="Замена масла АКПП | РЕМЗОНА" />
+    <meta property="og:description" content="Профессиональная замена масла в АКПП. Полная и частичная замена, промывка, адаптация." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gleb0vski.github.io/remzona/oil-change-atf.html" />
+
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ===== МЕСТО ДЛЯ ШАПКИ ===== -->
+    <div id="header-placeholder"></div>
+
+    <main>
+
+        <!-- ===== ВНУТРЕННИЙ ХИРО ===== -->
+        <section class="service-hero">
+            <div class="container">
+                <div class="service-hero-content">
+                    <div class="service-hero-text">
+                        <div class="breadcrumbs">
+                            <a href="index.html">Главная</a>
+                            <span>/</span>
+                            <a href="index.html#services">Услуги</a>
+                            <span>/</span>
+                            <span>Замена масла АКПП</span>
+                        </div>
+                        <h1>Замена масла АКПП</h1>
+                        <p class="service-hero-subtitle">Профессиональная замена трансмиссионной жидкости в автоматических коробках передач. Полная или частичная замена, промывка, адаптация. Продлеваем ресурс АКПП.</p>
+                        <div class="service-hero-buttons">
+                            <button class="btn btn-primary btn-large" onclick="openCallback()">
+                                Записаться на замену
+                            </button>
+                            <a href="#service-list" class="btn btn-outline btn-large">Как мы работаем</a>
+                        </div>
+                        <div class="service-hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">800+</div>
+                                <div class="stat-label">Замен масла АКПП</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Оригинальные жидкости</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">12 мес</div>
+                                <div class="stat-label">Гарантия на работу</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-hero-image">
+                        <img src="images/akpp-service.jpg" alt="Замена масла АКПП" onerror="this.parentElement.innerHTML='<div class=\'service-hero-placeholder\'><i class=\'fa-solid fa-gears\'></i><p>АКПП</p></div>'" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== СПИСОК УСЛУГ (КАРТОЧКИ) ===== -->
+        <section id="service-list" class="service-list-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Как мы <span class="accent-text">работаем</span></h2>
+                    <p class="section-subtitle">Профессиональный подход к замене масла в АКПП</p>
+                </div>
+
+                <div class="service-list-grid">
+                    <!-- Карточка 1: Диагностика -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-stethoscope"></i></div>
+                        <h3>Диагностика АКПП</h3>
+                        <ul>
+                            <li>Проверка уровня и состояния масла</li>
+                            <li>Диагностика ошибок АКПП</li>
+                            <li>Проверка работы гидротрансформатора</li>
+                            <li>Тест-драйв с анализом переключений</li>
+                            <li>Определение необходимости замены</li>
+                            <li>Консультация по выбору жидкости</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 2: Частичная замена -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-oil-can"></i></div>
+                        <h3>Частичная замена масла</h3>
+                        <ul>
+                            <li>Слив отработанного масла</li>
+                            <li>Замена масляного фильтра</li>
+                            <li>Заливка нового масла</li>
+                            <li>Проверка уровня</li>
+                            <li>Адаптация АКПП</li>
+                            <li>Тест-драйв после замены</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 3: Полная замена -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-sync-alt"></i></div>
+                        <h3>Полная замена (аппаратная)</h3>
+                        <ul>
+                            <li>Аппаратная замена масла</li>
+                            <li>Промывка гидросистемы</li>
+                            <li>Замена всех фильтров</li>
+                            <li>Обновление до 100% масла</li>
+                            <li>Адаптация АКПП</li>
+                            <li>Тест-драйв с проверкой</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 4: Фильтр АКПП -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-filter"></i></div>
+                        <h3>Замена фильтра АКПП</h3>
+                        <ul>
+                            <li>Демонтаж поддона АКПП</li>
+                            <li>Замена масляного фильтра</li>
+                            <li>Очистка магнитов и поддона</li>
+                            <li>Замена прокладки поддона</li>
+                            <li>Заливка свежего масла</li>
+                            <li>Проверка герметичности</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 5: Адаптация -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <h3>Адаптация АКПП</h3>
+                        <ul>
+                            <li>Адаптация после замены масла</li>
+                            <li>Обучение переключений</li>
+                            <li>Сброс адаптивных параметров</li>
+                            <li>Калибровка гидроблока</li>
+                            <li>Диагностика после адаптации</li>
+                            <li>Тест-драйв с проверкой</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 6: Комплекс -->
+                    <div class="service-list-card service-card-highlight">
+                        <div class="service-list-icon"><i class="fa-solid fa-star"></i></div>
+                        <h3>Комплексное обслуживание АКПП</h3>
+                        <ul>
+                            <li>Полная диагностика АКПП</li>
+                            <li>Аппаратная замена масла</li>
+                            <li>Замена всех фильтров</li>
+                            <li>Адаптация АКПП</li>
+                            <li>Промывка гидросистемы</li>
+                            <li><strong>Скидка 20% на комплекс</strong></li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== МЕСТО ДЛЯ ФУТЕРА ===== -->
+    <div id="footer-placeholder"></div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/loader.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('input[type="tel"]').mask('+7 (999) 999-99-99');
+        });
+    </script>
+</body>
+</html>

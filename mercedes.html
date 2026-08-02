@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ремонт Mercedes-Benz | РЕМЗОНА</title>
+
+    <meta name="description" content="Профессиональный ремонт Mercedes-Benz в Москве и Санкт-Петербурге. Диагностика, ремонт двигателя, ходовой, электроники и АКПП. Оригинальные запчасти. Гарантия." />
+    <meta name="keywords" content="ремонт Mercedes-Benz, автосервис Mercedes, диагностика Mercedes, ремонт двигателя Mercedes, ремонт АКПП Mercedes" />
+
+    <meta property="og:title" content="Ремонт Mercedes-Benz | РЕМЗОНА" />
+    <meta property="og:description" content="Профессиональный ремонт Mercedes-Benz любой сложности. Опытные мастера, оригинальные запчасти, гарантия." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gleb0vski.github.io/remzona/mercedes.html" />
+
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ===== МЕСТО ДЛЯ ШАПКИ ===== -->
+    <div id="header-placeholder"></div>
+
+    <main>
+
+        <!-- ===== ВНУТРЕННИЙ ХИРО ===== -->
+        <section class="service-hero">
+            <div class="container">
+                <div class="service-hero-content">
+                    <div class="service-hero-text">
+                        <div class="breadcrumbs">
+                            <a href="index.html">Главная</a>
+                            <span>/</span>
+                            <a href="index.html#brands">Ремонт по маркам</a>
+                            <span>/</span>
+                            <span>Mercedes-Benz</span>
+                        </div>
+                        <h1>Ремонт Mercedes-Benz</h1>
+                        <p class="service-hero-subtitle">Профессиональное обслуживание и ремонт автомобилей Mercedes-Benz любой сложности. Опытные мастера, оригинальные запчасти, гарантия на все работы.</p>
+                        <div class="service-hero-buttons">
+                            <button class="btn btn-primary btn-large" onclick="openCallback()">
+                                Записаться на ремонт
+                            </button>
+                            <a href="#service-list" class="btn btn-outline btn-large">Что мы ремонтируем</a>
+                        </div>
+                        <div class="service-hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">10+</div>
+                                <div class="stat-label">Лет опыта с Mercedes</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">400+</div>
+                                <div class="stat-label">Отремонтированных Mercedes</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Оригинальные запчасти</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-hero-image">
+                        <img src="images/mercedes-logo.png" alt="Ремонт Mercedes-Benz" onerror="this.parentElement.innerHTML='<div class=\'service-hero-placeholder\'><i class=\'fa-solid fa-car\'></i><p>Mercedes-Benz</p></div>'" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== СПИСОК УСЛУГ (КАРТОЧКИ) ===== -->
+        <section id="service-list" class="service-list-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Что мы <span class="accent-text">ремонтируем</span></h2>
+                    <p class="section-subtitle">Полный спектр работ по ремонту и обслуживанию Mercedes-Benz</p>
+                </div>
+
+                <div class="service-list-grid">
+                    <!-- Карточка 1: Двигатель -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-car"></i></div>
+                        <h3>Ремонт двигателей Mercedes</h3>
+                        <ul>
+                            <li>Диагностика и ремонт ДВС</li>
+                            <li>Замена масла и фильтров</li>
+                            <li>Ремонт ГБЦ и замена прокладок</li>
+                            <li>Ремонт систем охлаждения</li>
+                            <li>Замена цепей и ремней ГРМ</li>
+                            <li>Капитальный ремонт двигателя</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 2: АКПП -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-gears"></i></div>
+                        <h3>Ремонт АКПП Mercedes</h3>
+                        <ul>
+                            <li>Диагностика АКПП</li>
+                            <li>Замена масла в АКПП</li>
+                            <li>Ремонт гидротрансформатора</li>
+                            <li>Замена соленоидов и прокладок</li>
+                            <li>Адаптация и перепрошивка</li>
+                            <li>Капитальный ремонт АКПП</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 3: Ходовая -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-road"></i></div>
+                        <h3>Ремонт ходовой части Mercedes</h3>
+                        <ul>
+                            <li>Диагностика ходовой</li>
+                            <li>Замена амортизаторов и пружин</li>
+                            <li>Замена рычагов и сайлентблоков</li>
+                            <li>Замена рулевых тяг и наконечников</li>
+                            <li>Ремонт подвески</li>
+                            <li>Развал-схождение</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 4: Электроника -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <h3>Ремонт электроники Mercedes</h3>
+                        <ul>
+                            <li>Компьютерная диагностика</li>
+                            <li>Ремонт блоков управления</li>
+                            <li>Перепрошивка и чип-тюнинг</li>
+                            <li>Ремонт проводки и датчиков</li>
+                            <li>Диагностика ошибок</li>
+                            <li>Калибровка систем помощи</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 5: ТО -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-oil-can"></i></div>
+                        <h3>Техническое обслуживание Mercedes</h3>
+                        <ul>
+                            <li>Замена масла и фильтров</li>
+                            <li>Замена тормозных колодок и дисков</li>
+                            <li>Замена свечей зажигания</li>
+                            <li>Замена жидкостей (охлаждающая, тормозная)</li>
+                            <li>Диагностика перед ТО</li>
+                            <li>Плановое ТО по регламенту</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 6: Кондиционер -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-regular fa-snowflake"></i></div>
+                        <h3>Заправка и ремонт кондиционеров Mercedes</h3>
+                        <ul>
+                            <li>Диагностика кондиционера</li>
+                            <li>Заправка хладагентом</li>
+                            <li>Дезинфекция системы</li>
+                            <li>Ремонт компрессора</li>
+                            <li>Замена радиатора кондиционера</li>
+                            <li>Поиск и устранение утечек</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== МЕСТО ДЛЯ ФУТЕРА ===== -->
+    <div id="footer-placeholder"></div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/loader.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('input[type="tel"]').mask('+7 (999) 999-99-99');
+        });
+    </script>
+</body>
+</html>

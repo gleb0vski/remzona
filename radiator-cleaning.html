@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мойка радиаторов со снятием | РЕМЗОНА</title>
+
+    <meta name="description" content="Профессиональная мойка радиаторов со снятием в Москве и Санкт-Петербурге. Очистка радиатора двигателя, кондиционера, интеркулера. Полная промывка. Гарантия." />
+    <meta name="keywords" content="мойка радиатора, очистка радиатора, мойка радиатора со снятием, промывка радиатора" />
+
+    <meta property="og:title" content="Мойка радиаторов со снятием | РЕМЗОНА" />
+    <meta property="og:description" content="Профессиональная мойка радиаторов со снятием. Полная очистка систем охлаждения." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gleb0vski.github.io/remzona/radiator-cleaning.html" />
+
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ===== МЕСТО ДЛЯ ШАПКИ ===== -->
+    <div id="header-placeholder"></div>
+
+    <main>
+
+        <!-- ===== ВНУТРЕННИЙ ХИРО ===== -->
+        <section class="service-hero">
+            <div class="container">
+                <div class="service-hero-content">
+                    <div class="service-hero-text">
+                        <div class="breadcrumbs">
+                            <a href="index.html">Главная</a>
+                            <span>/</span>
+                            <a href="index.html#services">Услуги</a>
+                            <span>/</span>
+                            <span>Мойка радиаторов со снятием</span>
+                        </div>
+                        <h1>Мойка радиаторов со снятием</h1>
+                        <p class="service-hero-subtitle">Профессиональная очистка радиаторов двигателя, кондиционера и интеркулера со снятием. Восстанавливаем теплообмен, предотвращаем перегрев.</p>
+                        <div class="service-hero-buttons">
+                            <button class="btn btn-primary btn-large" onclick="openCallback()">
+                                Записаться на мойку
+                            </button>
+                            <a href="#service-list" class="btn btn-outline btn-large">Что моем</a>
+                        </div>
+                        <div class="service-hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">300+</div>
+                                <div class="stat-label">Промытых радиаторов</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Качественная очистка</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">12 мес</div>
+                                <div class="stat-label">Гарантия на работу</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-hero-image">
+                        <img src="images/radiator-cleaning.jpg" alt="Мойка радиатора" onerror="this.parentElement.innerHTML='<div class=\'service-hero-placeholder\'><i class=\'fa-solid fa-fan\'></i><p>Радиатор</p></div>'" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== СПИСОК УСЛУГ (КАРТОЧКИ) ===== -->
+        <section id="service-list" class="service-list-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Что мы <span class="accent-text">моем</span></h2>
+                    <p class="section-subtitle">Полная очистка всех радиаторов</p>
+                </div>
+
+                <div class="service-list-grid">
+                    <!-- Карточка 1: Радиатор двигателя -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-car"></i></div>
+                        <h3>Мойка радиатора двигателя</h3>
+                        <ul>
+                            <li>Снятие радиатора</li>
+                            <li>Внешняя очистка от грязи</li>
+                            <li>Промывка внутренних каналов</li>
+                            <li>Очистка сот от пыли и насекомых</li>
+                            <li>Проверка на герметичность</li>
+                            <li>Установка и замена охлаждающей жидкости</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 2: Радиатор кондиционера -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-regular fa-snowflake"></i></div>
+                        <h3>Мойка радиатора кондиционера</h3>
+                        <ul>
+                            <li>Снятие радиатора кондиционера</li>
+                            <li>Очистка сот от грязи</li>
+                            <li>Промывка химсоставом</li>
+                            <li>Проверка на утечки</li>
+                            <li>Заправка хладагентом</li>
+                            <li>Тестирование работы</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 3: Интеркулер -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-fan"></i></div>
+                        <h3>Мойка интеркулера</h3>
+                        <ul>
+                            <li>Снятие интеркулера</li>
+                            <li>Внешняя очистка сот</li>
+                            <li>Промывка масляных отложений</li>
+                            <li>Проверка герметичности</li>
+                            <li>Сушка и установка</li>
+                            <li>Проверка турбины</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 4: Радиатор отопителя -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-fire"></i></div>
+                        <h3>Мойка радиатора отопителя</h3>
+                        <ul>
+                            <li>Диагностика системы отопления</li>
+                            <li>Промывка радиатора отопителя</li>
+                            <li>Очистка от накипи и отложений</li>
+                            <li>Проверка эффективности</li>
+                            <li>Замена охлаждающей жидкости</li>
+                            <li>Проверка печки</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 5: Система охлаждения -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-sync-alt"></i></div>
+                        <h3>Промывка системы охлаждения</h3>
+                        <ul>
+                            <li>Полная промывка системы</li>
+                            <li>Замена охлаждающей жидкости</li>
+                            <li>Удаление отложений и накипи</li>
+                            <li>Проверка термостата</li>
+                            <li>Проверка помпы</li>
+                            <li>Замена антифриза</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 6: Комплекс -->
+                    <div class="service-list-card service-card-highlight">
+                        <div class="service-list-icon"><i class="fa-solid fa-star"></i></div>
+                        <h3>Комплексная очистка радиаторов</h3>
+                        <ul>
+                            <li>Мойка всех радиаторов</li>
+                            <li>Промывка системы охлаждения</li>
+                            <li>Замена антифриза</li>
+                            <li>Полная диагностика охлаждения</li>
+                            <li>Проверка герметичности</li>
+                            <li><strong>Скидка 20% на комплекс</strong></li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== МЕСТО ДЛЯ ФУТЕРА ===== -->
+    <div id="footer-placeholder"></div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/loader.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('input[type="tel"]').mask('+7 (999) 999-99-99');
+        });
+    </script>
+</body>
+</html>

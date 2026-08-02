@@ -277,6 +277,8 @@ function initCity() {
 function initMobileMenu() {
     const hamburger = document.getElementById('hamburger');
     const nav = document.getElementById('nav');
+    const navLinks = document.querySelectorAll('.nav-link');
+    
     if (!hamburger || !nav) {
         console.warn('⚠️ Элементы меню не найдены');
         return;
@@ -292,11 +294,33 @@ function initMobileMenu() {
         console.log('Меню:', nav.classList.contains('active') ? 'открыто' : 'закрыто');
     });
     
-    document.querySelectorAll('.nav-link').forEach(link => {
+    // ===== РАСКРЫТИЕ ДРОПДАУНОВ В МОБИЛЬНОМ МЕНЮ =====
+    const dropdowns = document.querySelectorAll('.nav-dropdown > .nav-link');
+    dropdowns.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            // Проверяем, что меню открыто (мобильная версия)
+            if (nav.classList.contains('active')) {
+                e.preventDefault();
+                const parent = this.parentElement;
+                parent.classList.toggle('active');
+            }
+        });
+    });
+    
+    // Закрытие меню при клике на ссылку
+    document.querySelectorAll('.nav-link, .nav-dropdown-content a').forEach(link => {
         link.addEventListener('click', function() {
+            // Не закрываем если это клик по дропдауну в мобилке
+            if (this.closest('.nav-dropdown') && nav.classList.contains('active')) {
+                return;
+            }
             hamburger.classList.remove('active');
             nav.classList.remove('active');
             document.body.style.overflow = '';
+            // Закрываем все дропдауны
+            document.querySelectorAll('.nav-dropdown.active').forEach(el => {
+                el.classList.remove('active');
+            });
         });
     });
 }

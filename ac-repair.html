@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заправка кондиционеров | РЕМЗОНА</title>
+
+    <meta name="description" content="Профессиональная заправка и обслуживание автокондиционеров в Москве и Санкт-Петербурге. Диагностика, заправка хладагентом, дезинфекция, ремонт. Скидка 20% на первый визит." />
+    <meta name="keywords" content="заправка кондиционера, обслуживание кондиционера, диагностика кондиционера, заправка автокондиционера" />
+
+    <meta property="og:title" content="Заправка кондиционеров | РЕМЗОНА" />
+    <meta property="og:description" content="Профессиональная заправка и обслуживание автокондиционеров. Диагностика, заправка хладагентом, дезинфекция." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gleb0vski.github.io/remzona/ac-repair.html" />
+
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ===== МЕСТО ДЛЯ ШАПКИ ===== -->
+    <div id="header-placeholder"></div>
+
+    <main>
+
+        <!-- ===== ВНУТРЕННИЙ ХИРО ===== -->
+        <section class="service-hero">
+            <div class="container">
+                <div class="service-hero-content">
+                    <div class="service-hero-text">
+                        <div class="breadcrumbs">
+                            <a href="index.html">Главная</a>
+                            <span>/</span>
+                            <a href="index.html#services">Услуги</a>
+                            <span>/</span>
+                            <span>Заправка кондиционеров</span>
+                        </div>
+                        <h1>Заправка кондиционеров</h1>
+                        <p class="service-hero-subtitle">Профессиональная заправка, диагностика и обслуживание автомобильных кондиционеров. Используем только качественные хладагенты и оборудование.</p>
+                        <div class="service-hero-buttons">
+                            <button class="btn btn-primary btn-large" onclick="openCallback()">
+                                Записаться на заправку
+                            </button>
+                            <a href="#service-list" class="btn btn-outline btn-large">Что мы делаем</a>
+                        </div>
+                        <div class="service-hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">500+</div>
+                                <div class="stat-label">Заправленных кондиционеров</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Качественный хладагент</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">12 мес</div>
+                                <div class="stat-label">Гарантия на работу</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-hero-image">
+                        <img src="images/ac-service.jpg" alt="Заправка кондиционера" onerror="this.parentElement.innerHTML='<div class=\'service-hero-placeholder\'><i class=\'fa-regular fa-snowflake\'></i><p>Кондиционер</p></div>'" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== СПИСОК УСЛУГ (КАРТОЧКИ) ===== -->
+        <section id="service-list" class="service-list-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Что мы <span class="accent-text">делаем</span></h2>
+                    <p class="section-subtitle">Полный спектр работ по обслуживанию автокондиционеров</p>
+                </div>
+
+                <div class="service-list-grid">
+                    <!-- Карточка 1: Диагностика -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-stethoscope"></i></div>
+                        <h3>Диагностика кондиционера</h3>
+                        <ul>
+                            <li>Проверка давления в системе</li>
+                            <li>Поиск утечек хладагента</li>
+                            <li>Проверка работы компрессора</li>
+                            <li>Диагностика электроники</li>
+                            <li>Проверка радиатора кондиционера</li>
+                            <li>Тестирование производительности</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 2: Заправка -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-fill-drip"></i></div>
+                        <h3>Заправка хладагентом</h3>
+                        <ul>
+                            <li>Заправка R134a</li>
+                            <li>Заправка R1234yf</li>
+                            <li>Вакуумирование системы</li>
+                            <li>Доливка масла</li>
+                            <li>Проверка герметичности</li>
+                            <li>Тестирование работы</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 3: Дезинфекция -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-spray-can"></i></div>
+                        <h3>Дезинфекция системы</h3>
+                        <ul>
+                            <li>Очистка испарителя</li>
+                            <li>Удаление грибка и бактерий</li>
+                            <li>Ароматизация салона</li>
+                            <li>Очистка воздуховодов</li>
+                            <li>Замена салонного фильтра</li>
+                            <li>Устранение неприятных запахов</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 4: Ремонт -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-wrench"></i></div>
+                        <h3>Ремонт кондиционера</h3>
+                        <ul>
+                            <li>Ремонт компрессора</li>
+                            <li>Замена радиатора</li>
+                            <li>Замена трубок и шлангов</li>
+                            <li>Ремонт электроники</li>
+                            <li>Замена датчиков</li>
+                            <li>Устранение утечек</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 5: Замена фильтра -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-filter"></i></div>
+                        <h3>Замена салонного фильтра</h3>
+                        <ul>
+                            <li>Замена угольного фильтра</li>
+                            <li>Замена обычного фильтра</li>
+                            <li>Очистка посадочного места</li>
+                            <li>Проверка воздуховодов</li>
+                            <li>Рекомендации по выбору</li>
+                            <li>Оригинальные фильтры</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 6: Комплексное обслуживание -->
+                    <div class="service-list-card service-card-highlight">
+                        <div class="service-list-icon"><i class="fa-solid fa-star"></i></div>
+                        <h3>Комплексное обслуживание</h3>
+                        <ul>
+                            <li>Диагностика + заправка</li>
+                            <li>Дезинфекция + замена фильтра</li>
+                            <li>Полная проверка системы</li>
+                            <li>Ремонт + заправка</li>
+                            <li>Сезонное обслуживание</li>
+                            <li><strong>Скидка 20% на комплекс</strong></li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== МЕСТО ДЛЯ ФУТЕРА ===== -->
+    <div id="footer-placeholder"></div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/loader.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('input[type="tel"]').mask('+7 (999) 999-99-99');
+        });
+    </script>
+</body>
+</html>
