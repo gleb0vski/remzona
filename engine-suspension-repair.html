@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ремонт ДВС и ходовой части | РЕМЗОНА</title>
+
+    <meta name="description" content="Профессиональный ремонт двигателя и ходовой части в Москве и Санкт-Петербурге. Диагностика, ремонт ДВС, замена подвески, амортизаторов, рычагов. Гарантия." />
+    <meta name="keywords" content="ремонт двигателя, ремонт ходовой, ремонт ДВС, замена подвески, диагностика двигателя" />
+
+    <meta property="og:title" content="Ремонт ДВС и ходовой части | РЕМЗОНА" />
+    <meta property="og:description" content="Профессиональный ремонт двигателя и ходовой части. Диагностика, ремонт ДВС, замена подвески." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gleb0vski.github.io/remzona/engine-suspension-repair.html" />
+
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ===== МЕСТО ДЛЯ ШАПКИ ===== -->
+    <div id="header-placeholder"></div>
+
+    <main>
+
+        <!-- ===== ВНУТРЕННИЙ ХИРО ===== -->
+        <section class="service-hero">
+            <div class="container">
+                <div class="service-hero-content">
+                    <div class="service-hero-text">
+                        <div class="breadcrumbs">
+                            <a href="index.html">Главная</a>
+                            <span>/</span>
+                            <a href="index.html#services">Услуги</a>
+                            <span>/</span>
+                            <span>Ремонт ДВС и ходовой части</span>
+                        </div>
+                        <h1>Ремонт ДВС и ходовой части</h1>
+                        <p class="service-hero-subtitle">Профессиональный ремонт двигателей и ходовой части любой сложности. Диагностика, капитальный ремонт ДВС, замена подвески и амортизаторов. Гарантия на все работы.</p>
+                        <div class="service-hero-buttons">
+                            <button class="btn btn-primary btn-large" onclick="openCallback()">
+                                Записаться на ремонт
+                            </button>
+                            <a href="#service-list" class="btn btn-outline btn-large">Что мы ремонтируем</a>
+                        </div>
+                        <div class="service-hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">10+</div>
+                                <div class="stat-label">Лет опыта ремонта</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">800+</div>
+                                <div class="stat-label">Отремонтированных авто</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">12 мес</div>
+                                <div class="stat-label">Гарантия на работы</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-hero-image">
+                        <img src="images/engine-repair.jpg" alt="Ремонт двигателя" onerror="this.parentElement.innerHTML='<div class=\'service-hero-placeholder\'><i class=\'fa-solid fa-car\'></i><p>ДВС</p></div>'" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== СПИСОК УСЛУГ (КАРТОЧКИ) ===== -->
+        <section id="service-list" class="service-list-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Что мы <span class="accent-text">ремонтируем</span></h2>
+                    <p class="section-subtitle">Полный спектр работ по ремонту двигателя и ходовой части</p>
+                </div>
+
+                <div class="service-list-grid">
+                    <!-- Карточка 1: Диагностика двигателя -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-stethoscope"></i></div>
+                        <h3>Диагностика двигателя</h3>
+                        <ul>
+                            <li>Компьютерная диагностика ДВС</li>
+                            <li>Проверка компрессии</li>
+                            <li>Анализ работы цилиндров</li>
+                            <li>Проверка систем питания и зажигания</li>
+                            <li>Диагностика турбины</li>
+                            <li>Расшифровка ошибок</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 2: Ремонт ДВС -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-car"></i></div>
+                        <h3>Ремонт двигателя</h3>
+                        <ul>
+                            <li>Замена прокладки ГБЦ</li>
+                            <li>Ремонт ГРМ и замена цепи/ремня</li>
+                            <li>Ремонт поршневой группы</li>
+                            <li>Ремонт турбины</li>
+                            <li>Капитальный ремонт ДВС</li>
+                            <li>Замена маслосъемных колпачков</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 3: Система охлаждения -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-temperature-high"></i></div>
+                        <h3>Ремонт системы охлаждения</h3>
+                        <ul>
+                            <li>Замена радиатора</li>
+                            <li>Замена термостата</li>
+                            <li>Замена помпы (водяного насоса)</li>
+                            <li>Промывка системы охлаждения</li>
+                            <li>Замена охлаждающей жидкости</li>
+                            <li>Ремонт вентилятора охлаждения</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 4: Ходовая часть -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-road"></i></div>
+                        <h3>Ремонт ходовой части</h3>
+                        <ul>
+                            <li>Замена амортизаторов и пружин</li>
+                            <li>Замена рычагов и сайлентблоков</li>
+                            <li>Замена шаровых опор</li>
+                            <li>Замена рулевых тяг и наконечников</li>
+                            <li>Замена стабилизатора и втулок</li>
+                            <li>Развал-схождение</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 5: Тормозная система -->
+                    <div class="service-list-card">
+                        <div class="service-list-icon"><i class="fa-solid fa-circle-stop"></i></div>
+                        <h3>Ремонт тормозной системы</h3>
+                        <ul>
+                            <li>Замена тормозных колодок и дисков</li>
+                            <li>Замена суппортов</li>
+                            <li>Замена тормозных шлангов</li>
+                            <li>Замена тормозной жидкости</li>
+                            <li>Ремонт ручника</li>
+                            <li>Диагностика ABS</li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+
+                    <!-- Карточка 6: Комплекс -->
+                    <div class="service-list-card service-card-highlight">
+                        <div class="service-list-icon"><i class="fa-solid fa-star"></i></div>
+                        <h3>Комплексный ремонт</h3>
+                        <ul>
+                            <li>Полная диагностика авто</li>
+                            <li>Ремонт двигателя + ходовой</li>
+                            <li>Ремонт тормозной системы</li>
+                            <li>Замена всех жидкостей</li>
+                            <li>Сезонное обслуживание</li>
+                            <li><strong>Скидка 20% на комплекс</strong></li>
+                        </ul>
+                        <a href="#callback" class="service-list-link" onclick="openCallback()">Записаться →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== МЕСТО ДЛЯ ФУТЕРА ===== -->
+    <div id="footer-placeholder"></div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/loader.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('input[type="tel"]').mask('+7 (999) 999-99-99');
+        });
+    </script>
+</body>
+</html>
